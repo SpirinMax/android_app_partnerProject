@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".activities.LumberCardActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_name_lumber"
+            style="@style/h2_textview"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="2"
+            android:text="Наименование"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageview_image_lumber"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/card_lumber_background"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/lumber_bez_foto" />
+
+                <TextView
+                    android:id="@+id/textview_amount_orders_label"
+                    style="@style/h2_textview"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Купили _ раз"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_gravity="end"
+                    android:text="@string/lumber_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_gravity="end"
+                    android:text="@string/breed_wood_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textview_diameter_label"
+                    style="@style/h2_textview"
+                    android:layout_gravity="end"
+                    android:text="@string/diameter_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_gravity="end"
+                    android:text="@string/length_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_gravity="end"
+                    android:text="@string/width_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_gravity="end"
+                    android:text="@string/thickness_label"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_name_category_lumber"
+                    style="@style/h2_textview"
+                    android:text="----"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textview_name_breed"
+                    style="@style/h2_textview"
+                    android:text="----"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textview_diameter"
+                    style="@style/h2_textview"
+                    android:text="----"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textview_len"
+                    style="@style/h2_textview"
+                    android:text="----"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textview_width"
+                    style="@style/h2_textview"
+                    android:text="----"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textview_thickhess"
+                    style="@style/h2_textview"
+                    android:text="----"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/price_card_label"
+                    android:textColor="@color/grey2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textview_category_price_label_top"
+                    style="@style/h2_textview"
+                    android:text="m3"
+                    android:textColor="@color/grey2"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textview_price_for_one"
+                    style="@style/h2_textview"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linlayout_1_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/specify_count"
+                    android:textColor="@color/grey2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textview_category_price_label"
+                    style="@style/h2_textview"
+                    android:text="m3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linlayout_1_card"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinput_count_lumber"
+                    style="@style/inputField_TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0.2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edittext_count_label_hint"
+                        style="@style/inputField_TextInputEditText"
+                        android:inputType="numberSigned"
+                        android:maxLength="4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBar_count_lumber"
+                    android:tickMark="@color/grey2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:max="50"
+                    android:min="1"
+                    android:progress="1"></SeekBar>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linlayout_2_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/final_price"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linlayout_2_card"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinput_final_price"
+                    style="@style/inputField_TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0.2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/inputField_TextInputEditText"
+                        android:backgroundTint="@color/inactive_button"
+                        android:inputType="numberSigned"
+                        android:enabled="false"
+                        android:textSize="20sp"
+                        android:textAlignment="textEnd"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/h2_textview"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/ruble_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textview_amount_discount"
+                    style="@style/h2_textview"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:text="-99%"
+                    android:textColor="@color/red"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/button_filter"
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:minWidth="150dp"
+            android:onClick="confirmOrderClick"
+            android:text="@string/confirm_order" />
+    </LinearLayout>
+</LinearLayout>

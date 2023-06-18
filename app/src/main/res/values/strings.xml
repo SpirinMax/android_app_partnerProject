@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">partnerProject</string>
+    <string name="main">Главная</string>
+
+
+    <string name="about_company">ООО "Партнер" обладает собственной лесообрабатывающей производственной базой, профессиональной техникой и квалифицированным персоналом. С 1999 года Мы производим широкий ассортимент пиломатериалов, который способен удовлетворить самого взыскательного заказчика. Обращение в нашу компанию - это возможность купить пиломатериалы на выгодных условиях.
+\nКакие достоинства нашей продукции следует выделить:
+\n ✔ Безопасность. Мы используем экологически чистое сырье.
+\n ✔ Эстетичность. Отделанный древесиной интерьер выглядит красиво и благородно.
+\n ✔ Прочность и долговечность. Вся продукция соответствует действующим требованиям ГОСТа.
+\n ✔ Простота монтажа и обработки. Наши сотрудники профессионалы в своей области.
+\n ✔ Обработка древесины производится при помощи современного оборудования продольного пиления профессиональными операторами станков.
+</string>
+
+    <string name="contact_string">Нижегородская область, Сокольский район, рп. Сокольское, ул. Ленинградская, д. 82</string>
+    <string name="contact_string_phone_email">
+        Телефон:\n
+        +7 950 344-92-72\n
+        Email:\n
+        ASuvorkov81@yandex.ru\n
+        partner_2005@rambler.ru\n\n\n\n
+    </string>
+
+    <string name="login">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+
+
+    <string name="reg_input_label">Для регистрации введите: </string>
+    <string name="login_input_label">Для входа в профиль введите: </string>
+    <string name="reg_label">Зарегистрируйтесь в Партнер-Онлайн!</string>
+    <string name="login_label">Войдите в Партнер-Онлайн!</string>
+    <string name="login_filed">Логин</string>
+    <string name="password_filed">Пароль</string>
+
+    <string name="i_legal_company_string">Я представитель юридического лица</string>
+    <string name="FIO">ФИО</string>
+    <string name="phone">Номер телефона</string>
+    <string name="address">Адресс</string>
+    <string name="name_legal">Название компании</string>
+    <string name="address_legal">Адресс компании</string>
+    <string name="you_legal">Вы представляете юридическое лицо</string>
+    <string name="you_profile">Ваш профиль</string>
+    <string name="profile">Профиль</string>
+    <string name="catalog">Каталог</string>
+    <string name="lumber">Пиломатериал</string>
+    <string name="lumber_label">Пиломатериал:</string>
+    <string name="filter">Фильтры</string>
+    <string name="quest">Поиск...</string>
+    <string name="discount">Скидка</string>
+    <string name="m3"> рублей за м³</string>
+    <string name="m3_2">м³</string>
+    <string name="avail_lumber">В наличии на складе</string>
+    <string name="not_avail_lumber">В данный момент нет на складе</string>
+    <string name="price">Цена, рублей</string>
+    <string name="price_ot">От</string>
+    <string name="price_do">До</string>
+    <string name="price_card_label">Цена за 1</string>
+    <string name="reset">Сбросить</string>
+    <string name="filter_apply">Применить фильтры</string>
+    <string name="next_page">Показать еще</string>
+    <string name="specify_count"> Укажите кол-во в</string>
+    <string name="final_price">Итоговая цена</string>
+    <string name="ruble_label">рублей</string>
+    <string name="confirm_order">Подтвердить заказ</string>
+
+
+    <string name="otp_verification">Подтверждение номера телефона</string>
+    <string name="send_otp">Отправить код</string>
+    <string name="dont_receive_the_OTP">Не пришел код?</string>
+    <string name="resend_otp">Прислать еще раз</string>
+    <string name="orders">Заказы</string>
+    <string name="you_orders">Ваши заказы</string>
+    <string name="not_have_orders">Вы еще не сделали ни одного заказа</string>
+    <string name="count_orders">Всего заказов - 0 шт</string>
+
+
+    <string name="our_products">Наши пиломатериалы</string>
+    <string name="breed_wood">Порода</string>
+    <string name="breed_wood_label">Порода:</string>
+    <string name="category_price">Цена по</string>
+    <string name="category_lumber">Вид пиломатериала</string>
+    <string name="diameter">Диаметр</string>
+    <string name="diameter_label">Диаметр:</string>
+    <string name="width">Ширина</string>
+    <string name="width_label">Ширина:</string>
+    <string name="length">Длина</string>
+    <string name="length_label">Длина:</string>
+    <string name="thickness">Толщина</string>
+    <string name="thickness_label">Толщина:</string>
+    <string name="only_discount">По скидке</string>
+    <string name="sort">Сортировка</string>
+    <string name="sort_min_price">По уменьшению цены</string>
+    <string name="sort_max_price">По возрастанию цены</string>
+    <string name="sort_amount_order">По кол-ву заказов</string>
+    <string name="sort_only_discount">Только скидки</string>
+
+    <string name="category_softwood"><u>Хвойные породы</u></string>
+    <string name="category_hardwoods"><u>Лиственные породы</u></string>
+    <string name="category_firewoods"><u>Дрова</u></string>
+    <string name="pine">Сосна</string>
+    <string name="spruce">Ель</string>
+    <string name="larch">Лиственница</string>
+    <string name="pine_spruce">Сосна+Ель</string>
+    <string name="birch">Береза</string>
+    <string name="aspen">Осина</string>
+
+</resources>

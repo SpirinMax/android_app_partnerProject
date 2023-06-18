@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AuthActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_form_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_menu"
+        android:isScrollContainer="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/welcom_textview1"
+                style="@style/heading_textview"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:text="@string/reg_label"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/welcom_textview2"
+                style="@style/h3_textview"
+                android:layout_below="@+id/welcom_textview1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/reg_input_label"
+                android:textAlignment="center" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput_login"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/welcom_textview2"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/login_filed"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput_pasword"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/textinput_login"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/password_filed"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_textinputlayout"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/textinput_pasword"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_phone"
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:maxLength="16" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/FIO_textinputlayout"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/phone_textinputlayout"
+                android:clickable="true"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_FIO"
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/FIO" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address_textinputlayout"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/FIO_textinputlayout"
+                android:clickable="true"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_address"
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="Ваш адрес" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/i_legalcompany_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/address_textinputlayout"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/finlandica_medium"
+                android:onClick="openFieldLegalCompany"
+                android:text="@string/i_legal_company_string"
+                android:theme="@style/check_box"></com.google.android.material.checkbox.MaterialCheckBox>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_legal_company_textinputlayout"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/i_legalcompany_checkbox"
+                android:visibility="gone"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_name_legal_company"
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/name_legal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address_legal_company_textinputlayout"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/name_legal_company_textinputlayout"
+                android:visibility="gone"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_address_legal_company"
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/address_legal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_auth"
+                style="@style/button_inactive_style"
+                android:layout_below="@+id/address_legal_company_textinputlayout"
+                android:onClick="sendAuthData"
+                android:text="Зарегистрироваться" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/bottom_menu"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.partnerproject.ui.fragments.ContentFragmentBottomMenu"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

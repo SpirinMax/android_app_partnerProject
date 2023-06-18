@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CatalogActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/linlayout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_menu"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+       <ImageButton
+           android:layout_width="50dp"
+           android:layout_height="match_parent"
+           android:layout_marginStart="10dp"
+           android:onClick="searchClick"
+           android:src="@drawable/search_icon">
+       </ImageButton>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textinputlayout_search"
+            style="@style/searchField_TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_marginStart="0dp"
+            android:clickable="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_search"
+                style="@style/inputField_TextInputEditText"
+                android:hint="@string/quest"
+                android:textColorHint="@color/background_textview"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageview_filter"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="0.1"
+            android:scaleType="center"
+            android:background="@drawable/filter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlayout_recycleview_catlumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linlayout_search"
+        android:gravity="center_vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categories_lumbers_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlayout_recycleview_list_lumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linlayout_recycleview_catlumbers"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_lumbers_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingBottom="100dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        style="@style/button_filter"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:onClick="addLumbersInAdapter"
+        android:layout_above="@id/bottom_menu"
+        android:text="@string/next_page" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/bottom_menu"
+        android:name="com.example.partnerproject.ui.fragments.ContentFragmentBottomMenu"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SelectAuthActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_cover_forest" />
+            <TextView
+                style="@style/heading_textview"
+                android:layout_gravity="center"
+                android:text="ООО ПАРТНЕР\nПиломатериалы"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            style="@style/button_filter"
+            android:text="@string/login"
+            android:onClick="goToLoginActivity">
+        </Button>
+        <Button
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            style="@style/button_filter"
+            android:text="@string/register"
+            android:onClick="goToRegisterActivity">
+        </Button>
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.partnerproject.ui.fragments.ContentFragmentBottomMenu" />
+</RelativeLayout>

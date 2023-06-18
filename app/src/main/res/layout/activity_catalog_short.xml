@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CatalogShortActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/heading_textview"
+                android:text="@string/our_products" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/shortcatalog_breed_textview"
+                    style="@style/h3_textview"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_softwood"
+                    android:textAlignment="center"
+
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/shortcatalog_linlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shortcatalog_breed_textview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/pine_tree_image" />
+
+                    <GridLayout
+                        android:id="@+id/shortcatalog_breed_gridlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="2"
+                        android:useDefaultMargins="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/button_fragment_shortcatalog1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/button_fragment_shortcatalog2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/button_fragment_shortcatalog3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/button_fragment_shortcatalog4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </GridLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/shortcatalog_breed_textview2"
+                    style="@style/h3_textview"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_hardwoods"
+                    android:textAlignment="center"
+
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/shortcatalog_linlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shortcatalog_breed_textview2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/birch_tree_image" />
+
+                    <GridLayout
+                        android:id="@+id/shortcatalog_breed_gridlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="2"
+                        android:useDefaultMargins="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/button_fragment_shortcatalog5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/button_fragment_shortcatalog6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </GridLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/shortcatalog_breed_textview3"
+                    style="@style/h3_textview"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_firewoods"
+                    android:textAlignment="center"
+
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/shortcatalog_linlayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shortcatalog_breed_textview3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/firewood" />
+
+                    <GridLayout
+                        android:id="@+id/shortcatalog_breed_gridlayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="2"
+                        android:useDefaultMargins="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1">
+
+                            <androidx.fragment.app.FragmentContainerView
+                                android:id="@+id/button_fragment_shortcatalog7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </GridLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/bottom_menu"
+        android:name="com.example.partnerproject.ui.fragments.ContentFragmentBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

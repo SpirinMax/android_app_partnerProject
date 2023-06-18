@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_form_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_menu"
+        android:layout_alignParentTop="true"
+        android:isScrollContainer="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/welcom_textview1"
+                style="@style/heading_textview"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:text="@string/login_label"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/welcom_textview2"
+                style="@style/h3_textview"
+                android:layout_below="@+id/welcom_textview1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/login_input_label"
+                android:textAlignment="center" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput_login"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/welcom_textview2"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/login_filed"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinput_pasword"
+                style="@style/inputField_TextInputLayout"
+                android:layout_below="@+id/textinput_login"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/inputField_TextInputEditText"
+                    android:hint="@string/password_filed"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_auth"
+                style="@style/button_inactive_style"
+                android:layout_below="@+id/textinput_pasword"
+                android:onClick="sendLoginData"
+                android:text="@string/login" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/bottom_menu"
+        android:name="com.example.partnerproject.ui.fragments.ContentFragmentBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>

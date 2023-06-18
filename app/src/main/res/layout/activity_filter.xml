@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.FilterActivity">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bottom_line_background"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textview_sort_filter_label"
+                    style="@style/h2_textview"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/sort"
+                    android:textColor="@color/black"></TextView>
+
+                <TextView
+                    android:id="@+id/textview_sort_filter_reset"
+                    style="@style/h2_textview"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/reset"
+                    android:textColor="@color/red" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_sort_filter_label"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_sort_amount_order"
+                        style="@style/radiobutton_style_1"
+                        android:onClick="onSortRadioButtonClicked"
+                        android:text="@string/sort_amount_order"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_sort_max_price"
+                        style="@style/radiobutton_style_1"
+                        android:onClick="onSortRadioButtonClicked"
+                        android:text="@string/sort_min_price" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_sort_min_price"
+                        style="@style/radiobutton_style_1"
+                        android:onClick="onSortRadioButtonClicked"
+                        android:text="@string/sort_max_price"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_sort_only_discount"
+                        style="@style/radiobutton_style_1"
+                        android:onClick="onSortRadioButtonClicked"
+                        android:text="@string/sort_only_discount"></RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bottom_line_background"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textveiw_parameter_filter"
+                    style="@style/h2_textview"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/price"
+                    android:textColor="@color/black"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textveiw_parameter_filter">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textinput_start_price_filter"
+                        style="@style/inputField_TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/inputField_TextInputEditText"
+                            android:hint="@string/price_ot"
+                            android:inputType="numberSigned"
+                            android:maxLength="10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textinput_final_price_filter"
+                        style="@style/inputField_TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/inputField_TextInputEditText"
+                            android:hint="@string/price_do"
+                            android:inputType="numberSigned"
+                            android:maxLength="10" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/filter_field1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/filter_field2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/filter_field3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/filter_field4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/filter_field5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/filter_field6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/filter_field7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

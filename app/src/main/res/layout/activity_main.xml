@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardCornerRadius="10dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_cover_forest" />
+
+                    <TextView
+                        style="@style/heading_textview"
+                        android:layout_gravity="center"
+                        android:text="ООО ПАРТНЕР\nПиломатериалы"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/heading_textview"
+                android:text="О предприятии" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/finlandica_variablefont_wght"
+                android:text="@string/about_company"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/heading_textview"
+                android:text="Контакты" />
+
+            <ImageView
+                android:id="@+id/contact_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/contact_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_placemark" />
+
+                <TextView
+                    android:id="@+id/contact_textview"
+                    style="@style/heading_textview"
+                    android:text="@string/contact_string"
+                    android:textAlignment="textStart"
+                    android:layout_margin="0dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/finlandica_medium"
+                android:text="@string/contact_string_phone_email">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.partnerproject.ui.fragments.ContentFragmentBottomMenu"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

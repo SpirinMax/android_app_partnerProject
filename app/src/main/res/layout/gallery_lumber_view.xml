@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rellayout_card_in_gallery_lumbers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="7.5dp"
+    android:layout_marginVertical="15dp"
+    android:background="@drawable/card_lumber_background">
+
+    <FrameLayout
+        android:id="@+id/framelayout_image_card_lumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview_image_lumber"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/card_lumber_background"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lumber_bez_foto" />
+
+        <TextView
+            android:id="@+id/textview_amount_discount"
+            style="@style/textview_card_lumber_discount"
+            android:layout_gravity="end|bottom"
+            android:backgroundTint="@color/fill_input_field_green"
+            android:text="-??%" />
+
+        <TextView
+            android:id="@+id/textview_discount_label"
+            style="@style/textview_card_lumber_discount"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/red_discount"
+            android:text="@string/discount" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/framelayout_image_card_lumber"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_name_lumber"
+            style="@style/h2_textview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:maxLines="4"
+            android:textColor="@color/grey2"
+            android:text="Наименование"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageview_icon_avail_lumber"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/check_mark_icon"></ImageView>
+
+            <TextView
+                android:id="@+id/textview_avail_lumber"
+                style="@style/h2_textview"
+                android:text="Наличие"
+                android:textColor="@color/green_theme"
+                android:textSize="10sp"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_sort_lumber"
+            style="@style/h2_textview"
+            android:text="Сорт:"
+            android:textSize="12sp"
+            android:visibility="gone"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/textview_price_discount"
+                style="@style/h2_textview"
+                android:textSize="18sp"
+                android:layout_marginRight="5dp"
+                android:text="Скидочная"
+                android:textColor="@color/green_theme" />
+
+            <TextView
+                android:id="@+id/textview_full_price"
+                style="@style/h2_textview"
+                android:textSize="18sp"
+                android:text="Полная цена" />
+
+            <TextView
+                android:id="@+id/textview_category_price_label"
+                style="@style/h2_textview"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="@string/m3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

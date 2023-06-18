@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="heading_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/green_theme</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/finlandica_bold</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="h3_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+        <item name="marginHorizontal">20dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+    </style>
+
+    <style name="h2_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+        <item name="marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">0dp</item>
+    </style>
+
+    <style name="top_tip_materialtextview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+        <item name="marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">2.5dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="materialTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:layout_marginVertical">7.5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">@style/h2_textview</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:paddingVertical">12.5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/rounded_corner</item>
+        <item name="android:rowCount">5</item>
+    </style>
+
+    <style name="inputField_TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="boxStrokeColor">@color/green_theme</item>
+        <item name="boxBackgroundColor">@color/fill_input_field_green</item>
+    </style>
+
+    <style name="searchField_TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="boxStrokeColor">@color/green</item>
+        <item name="boxBackgroundColor">@color/background_textview</item>
+    </style>
+
+    <style name="inputField_TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+    </style>
+
+    <style name="textview_card_lumber_discount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_corner3</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/finlandica_medium</item>
+        <item name="android:paddingHorizontal">5dp</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:layout_marginVertical">2.5dp</item>
+    </style>
+
+    <style name="check_box">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/green_theme</item>
+    </style>
+
+    <style name="button_inactive_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">30dp</item>
+        <item name="backgroundTint">@color/inactive_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+    </style>
+
+    <style name="button_filter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">30dp</item>
+        <item name="backgroundTint">@color/fill_input_field_green</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+    </style>
+
+    <style name="short_category_card_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/green</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="radiobutton_style_1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/finlandica_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">2.5dp</item>
+    </style>
+
+</resources>

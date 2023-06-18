@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rellayout_filter_filed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bottom_line_background"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/textveiw_parameter_filter"
+        style="@style/h3_textview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Параметр"
+        android:textColor="@color/grey2"></TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textveiw_parameter_filter">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_parameters_filter"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textveiw_parameter_filter"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textview_selecting_filter_param"
+            style="@style/h3_textview"
+            android:background="@drawable/rounded_corner2"
+            android:padding="5dp"
+            android:text="Выбранный параметр"
+            android:textColor="@color/grey2"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textveiw_reset_filter"
+        style="@style/h3_textview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/reset"
+        android:textColor="@color/red"></TextView>
+
+</RelativeLayout>

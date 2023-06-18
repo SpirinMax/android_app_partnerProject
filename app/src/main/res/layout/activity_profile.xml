@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:id="@+id/textview_you_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/top_menu"
+        style="@style/heading_textview"
+        android:text="@string/you_profile">
+    </TextView>
+    <TextView
+        android:id="@+id/textview_you_legal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview_you_profile"
+        style="@style/h3_textview"
+        android:visibility="gone"
+        android:text="@string/you_legal">
+    </TextView>
+    <LinearLayout
+        android:layout_below="@+id/textview_you_legal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/profile_m_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/profile_m_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/profile_m_textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/profile_m_textview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/profile_m_textview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+           style="@style/button_filter"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="exitFromProfile"
+            android:text="Выйти из профиля">
+        </Button>
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.partnerproject.ui.fragments.ContentFragmentBottomMenu"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

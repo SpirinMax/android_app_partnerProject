@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rellayout_card_in_gallery_lumbers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="7.5dp"
+    android:layout_marginVertical="15dp"
+    android:background="@drawable/card_lumber_background_red_stroke">
+
+    <ImageView
+        android:id="@+id/imageview_image_lumber"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/card_lumber_background_red_stroke"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/imageview_image_lumber"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_name_lumber"
+            style="@style/h2_textview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:maxLines="4"
+            android:text="Наименование"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textview_date_order"
+            style="@style/h2_textview"
+            android:text="Дата заказа" />
+
+        <TextView
+            android:id="@+id/textview_count_orders"
+            style="@style/h2_textview"
+            android:text="Вы заказали" />
+
+        <TextView
+            android:id="@+id/textview_final_price"
+            style="@style/h2_textview"
+            android:text="Цена составила" />
+
+    </LinearLayout>
+
+</RelativeLayout>
