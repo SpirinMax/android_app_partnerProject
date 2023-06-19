@@ -128,6 +128,7 @@ public class AuthActivity extends AppCompatActivity {
                     if (response.code() == 200) {
                         UtilsActivity.editSharedPreferencesByKey(context, UtilsActivity.PREF_KEY_PHONE, phoneEditText.getText().toString());
                         Toast.makeText(context, "Данные сохранены успешно!", Toast.LENGTH_SHORT).show();
+                        UtilsActivity.goToActivity(context, ProfileActivity.class);
                     }
                 }
 
@@ -150,7 +151,7 @@ public class AuthActivity extends AppCompatActivity {
         if (password_textInputLayout.getEditText().getText().toString().length() < 6) {
             password_textInputLayout.setError("Минимальная длина - 6 символов");
         }
-        if (login_textInputLayout.getEditText().getText().toString().length() > 6 && password_textInputLayout.getEditText().getText().toString().length() < 6) {
+        if (login_textInputLayout.getEditText().getText().toString().length() >= 6 && password_textInputLayout.getEditText().getText().toString().length() >= 6) {
             resultCheck = true;
             login_textInputLayout.setError("");
             password_textInputLayout.setError("");

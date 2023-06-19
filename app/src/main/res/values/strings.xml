@@ -15,10 +15,10 @@
     <string name="contact_string">Нижегородская область, Сокольский район, рп. Сокольское, ул. Ленинградская, д. 82</string>
     <string name="contact_string_phone_email">
         Телефон:\n
-        +7 950 344-92-72\n
+        +7 950 999-99-99\n
         Email:\n
-        ASuvorkov81@yandex.ru\n
-        partner_2005@rambler.ru\n\n\n\n
+        partner52les@yandex.ru\n
+        partner52les@rambler.ru\n\n\n\n
     </string>
 
     <string name="login">Войти</string>
@@ -35,9 +35,9 @@
     <string name="i_legal_company_string">Я представитель юридического лица</string>
     <string name="FIO">ФИО</string>
     <string name="phone">Номер телефона</string>
-    <string name="address">Адресс</string>
+    <string name="address">Адрес</string>
     <string name="name_legal">Название компании</string>
-    <string name="address_legal">Адресс компании</string>
+    <string name="address_legal">Адрес компании</string>
     <string name="you_legal">Вы представляете юридическое лицо</string>
     <string name="you_profile">Ваш профиль</string>
     <string name="profile">Профиль</string>
