@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.bottom_menu, ContentFragmentBottomMenu.class, null)
@@ -39,16 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 startSelectMapsActivity();
             }
         });
-
-
-
     }
-
-
     private void startSelectMapsActivity() {
         Uri uri = Uri.parse("geo:57.163480,43.172646?z=15");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
-
 }
