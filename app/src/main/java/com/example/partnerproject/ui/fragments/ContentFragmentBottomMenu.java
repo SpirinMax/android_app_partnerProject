@@ -79,7 +79,6 @@ public class ContentFragmentBottomMenu extends Fragment {
                 if (!getActivity().getClass().equals(CustomerOrdersActivity.class)) {
                     if (UtilsActivity.checkUserDataByPhone(getContext())) {
                         UtilsActivity.goToActivity(getContext(), CustomerOrdersActivity.class);
-                        Toast.makeText(getContext(), "Вы не вошли в профиль!", Toast.LENGTH_SHORT).show();
                     } else {
                         UtilsActivity.goToActivity(getContext(), SelectAuthActivity.class);
                     }

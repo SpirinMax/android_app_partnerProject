@@ -72,7 +72,7 @@ public class OrdersCustomerAdapter extends RecyclerView.Adapter<OrdersCustomerAd
             priceForOneStr = MathUtils.getIntegerValue(order.getPriceLumber().getDiscountPrice());
             discountStr = "со скидкой " + MathUtils.getIntegerValue(order.getPriceLumber().getCategoryPrice().getDiscountAmount()) + "%";
         }
-        String priceStr = "За " + finalPriceStr + " руб." + " (" + priceForOneStr + " руб. " + discountStr + " за 1 " + categoryStr;
+        String priceStr = "За " + finalPriceStr + " руб." + " \n(" + priceForOneStr + " руб. " + discountStr + " за 1 " + categoryStr+")";
         holder.finalPriceTextView.setText(priceStr);
     }
 

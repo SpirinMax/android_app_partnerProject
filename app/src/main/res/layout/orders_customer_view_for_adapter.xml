@@ -13,8 +13,9 @@
         android:id="@+id/imageview_image_lumber"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/card_lumber_background_red_stroke"
-        android:scaleType="fitCenter" />
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:scaleType="fitXY" />
 
     <LinearLayout
         android:layout_width="match_parent"

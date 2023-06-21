@@ -31,7 +31,7 @@ public interface ApiService {
     @POST("customer/upd")
     Call<HandlerHttpCode> editCustomer(@Body Customer customer);
 
-    @POST("/restApi/price")
+    @POST("price")
     Call<List<PriceLumber>> receivePagePrices(@Body FilterParameters filter);
     @POST("order/create")
     Call<HandlerHttpCode> createOrder (@Body OrderLumber order, @Query("phone") String phone);
